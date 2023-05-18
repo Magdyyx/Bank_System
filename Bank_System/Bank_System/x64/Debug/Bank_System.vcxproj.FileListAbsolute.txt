@@ -1,0 +1,6 @@
+D:\Test\Bank_System\Bank_System\x64\Debug\Bank_System.vcxproj.AssemblyReference.cache
+D:\Test\Bank_System\Bank_System\x64\Debug\Bank_System.vcxproj.SuggestedBindingRedirects.cache
+D:\Test\Bank_System\Bank_System\x64\Debug\Bank_System.vcxproj.GenerateResource.cache
+D:\Test\Bank_System\Bank_System\x64\Debug\BankSystem.Customer_LoggedIn.resources
+D:\Test\Bank_System\Bank_System\x64\Debug\BankSystem.adminLoggedIn.resources
+D:\Test\Bank_System\Bank_System\x64\Debug\BankSystem.employee_loggedIn.resources
