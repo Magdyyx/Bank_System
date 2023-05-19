@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(emploggedin));
             this.userSSN_input = new System.Windows.Forms.TextBox();
             this.userPhone_input = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,15 +45,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
-<<<<<<< HEAD
             this.branchNo_input = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.BankNo_input = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-=======
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
->>>>>>> 743881b32eb80b1fec11a102adee50738ebfab79
             this.SuspendLayout();
             // 
             // userSSN_input
@@ -222,72 +216,30 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
-<<<<<<< HEAD
             // branchNo_input
             // 
             this.branchNo_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.branchNo_input.Location = new System.Drawing.Point(753, 698);
+            this.branchNo_input.Location = new System.Drawing.Point(563, 698);
             this.branchNo_input.Name = "branchNo_input";
-            this.branchNo_input.Size = new System.Drawing.Size(179, 28);
+            this.branchNo_input.Size = new System.Drawing.Size(369, 28);
             this.branchNo_input.TabIndex = 39;
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(796, 625);
+            this.label6.Location = new System.Drawing.Point(649, 625);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 70);
-=======
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(664, 629);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(199, 70);
->>>>>>> 743881b32eb80b1fec11a102adee50738ebfab79
+            this.label6.Size = new System.Drawing.Size(214, 70);
             this.label6.TabIndex = 38;
             this.label6.Text = "Branch Number";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-<<<<<<< HEAD
-            // BankNo_input
-            // 
-            this.BankNo_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BankNo_input.Location = new System.Drawing.Point(563, 698);
-            this.BankNo_input.Name = "BankNo_input";
-            this.BankNo_input.Size = new System.Drawing.Size(179, 28);
-            this.BankNo_input.TabIndex = 41;
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(605, 625);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(105, 70);
-            this.label7.TabIndex = 40;
-            this.label7.Text = "Bank Number";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-=======
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(603, 702);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(295, 22);
-            this.textBox5.TabIndex = 39;
->>>>>>> 743881b32eb80b1fec11a102adee50738ebfab79
             // 
             // emploggedin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 853);
-<<<<<<< HEAD
-            this.Controls.Add(this.BankNo_input);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.branchNo_input);
-=======
-            this.Controls.Add(this.textBox5);
->>>>>>> 743881b32eb80b1fec11a102adee50738ebfab79
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -305,8 +257,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "emploggedin";
-            this.Text = "EmpLoggedin";
+            this.Text = "Emp Loggedin";
             this.Load += new System.EventHandler(this.emploggedin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -331,14 +284,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.ListView listView1;
-<<<<<<< HEAD
         private System.Windows.Forms.TextBox branchNo_input;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox BankNo_input;
-        private System.Windows.Forms.Label label7;
-=======
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
->>>>>>> 743881b32eb80b1fec11a102adee50738ebfab79
     }
 }

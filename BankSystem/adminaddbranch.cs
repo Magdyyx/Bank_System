@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BankSystem
 {
@@ -33,7 +32,6 @@ namespace BankSystem
             this.Hide();
         }
 
-<<<<<<< HEAD
         private bool IsFound(string attribute, string table, string value, SqlConnection con)
         {
             string sqlSelect = "SELECT " + attribute + " FROM " + table;
@@ -74,19 +72,5 @@ namespace BankSystem
             }
         }
 
-=======
-        private void button4_Click(object sender, EventArgs e)
-        {
-            SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-5G3H0IA;Initial Catalog=Bank_System;Integrated Security=True");
-            cn.Open();
-            SqlCommand MyCommand = new SqlCommand("INSERT INTO Branch (BranchNumber, Address, BankCode) VALUES (@BranchNumber, @Address, @BankCode)", cn);
-            MyCommand.Parameters.AddWithValue("@BranchNumber", textBox1.Text.ToString());
-            MyCommand.Parameters.AddWithValue("@Address", textBox3.Text.ToString());
-            MyCommand.Parameters.AddWithValue("@BankCode", textBox2.Text);
-            MyCommand.ExecuteNonQuery();
-            cn.Close();
-            MessageBox.Show("Branch Added Successfully");
-        }
->>>>>>> 743881b32eb80b1fec11a102adee50738ebfab79
     }
 }

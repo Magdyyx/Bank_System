@@ -71,54 +71,31 @@ namespace BankSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             //Changed the connection string declaration to a regular string variable.
             string connectionString = "Data Source=BODA;Initial Catalog=Bank_System;Integrated Security=True";
             using (SqlConnection sqlConnection = new SqlConnection(connectionString)) 
             {
-                bool found = isFound("BankCode", "Bank", BankNo_input.Text, sqlConnection);
+                bool found = isFound("BranchNumber", "Branch", branchNo_input.Text, sqlConnection);
                 if (found)
                 {
-                    found = false;
-                    found = isFound("BranchNumber", "Branch", branchNo_input.Text, sqlConnection);
-                    if (found)
-                    {
-                        string sqlInsert = "insert into Customer(Name,Phone,Address,BranchNumber,SSN) values(@Name,@Phone,@Address,@BranchNumber,@SSN)";
-                        SqlCommand cmd = new SqlCommand(sqlInsert, sqlConnection);
-                        cmd.Parameters.AddWithValue("@Name", userName_input.Text);
-                        cmd.Parameters.AddWithValue("@Phone", userPhone_input.Text);
-                        cmd.Parameters.AddWithValue("@Address", userAddr_input.Text);
-                        cmd.Parameters.AddWithValue("@BranchNumber", branchNo_input.Text);
-                        cmd.Parameters.AddWithValue("@SSN", userSSN_input.Text);
-                        sqlConnection.Open();
-                        cmd.ExecuteNonQuery();
-                        sqlConnection.Close();
-                        MessageBox.Show("The Customer has been added successfully");
-                    }
-                    else
-                    {
-                        MessageBox.Show("The Branch Not Founded");
-                    }
+                    string sqlInsert = "insert into Customer(Name,Phone,Address,BranchNumber,SSN) values(@Name,@Phone,@Address,@BranchNumber,@SSN)";
+                    SqlCommand cmd = new SqlCommand(sqlInsert, sqlConnection);
+                    cmd.Parameters.AddWithValue("@Name", userName_input.Text);
+                    cmd.Parameters.AddWithValue("@Phone", userPhone_input.Text);
+                    cmd.Parameters.AddWithValue("@Address", userAddr_input.Text);
+                    cmd.Parameters.AddWithValue("@BranchNumber", branchNo_input.Text);
+                    cmd.Parameters.AddWithValue("@SSN", userSSN_input.Text);
+                    sqlConnection.Open();
+                    cmd.ExecuteNonQuery();
+                    sqlConnection.Close();
+                    MessageBox.Show("The Customer has been added successfully");
                 }
                 else
                 {
-                    MessageBox.Show("The Bank Not Founded");
+                    MessageBox.Show("The Branch Not Founded");
                 }
-            }
-=======
-            SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-5G3H0IA;Initial Catalog=Bank_System;Integrated Security=True");
-            cn.Open();
-            SqlCommand MyCommand = new SqlCommand("INSERT INTO Customer (SSN, Name, Phone,Address,BranchNumber) VALUES (@SSN, @Name, @Phone,@Address,@BranchNumber)", cn);
-            MyCommand.Parameters.AddWithValue("@SSN", textBox4.Text);
-            MyCommand.Parameters.AddWithValue("@Name", textBox1.Text.ToString());
-            MyCommand.Parameters.AddWithValue("@Phone", textBox3.Text.ToString());
-            MyCommand.Parameters.AddWithValue("@Address", textBox2.Text.ToString());
-            MyCommand.Parameters.AddWithValue("@BranchNumber", textBox5.Text.ToString());
 
-            MyCommand.ExecuteNonQuery();
-            cn.Close();
-            MessageBox.Show("Customer Added Successfully");
->>>>>>> 743881b32eb80b1fec11a102adee50738ebfab79
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
