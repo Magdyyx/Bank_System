@@ -131,7 +131,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(857, 94);
             this.label1.TabIndex = 66;
-            this.label1.Text = "Showing list of customers";
+            this.label1.Text = "Showing list of Pending loans";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button6

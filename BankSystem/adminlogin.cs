@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -40,9 +41,31 @@ namespace BankSystem
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            adminaddbank adminaddbank = new adminaddbank();
-            adminaddbank.Show();
-            this.Hide();
+            SqlConnection cn = new SqlConnection(@"Data Source=BODA;Initial Catalog=Bank_System;Integrated Security=True");
+            cn.Open();
+            SqlCommand MyCommand = new SqlCommand("SELECT COUNT(*) FROM Admin WHERE Admin_Name = @AdminName AND Admin_ID = @AdminID", cn);
+            textBox2.PasswordChar = '*';
+            MyCommand.Parameters.AddWithValue("@AdminName", textBox1.Text);
+            MyCommand.Parameters.AddWithValue("@AdminID", textBox2.Text.ToString());
+            int count = (int)MyCommand.ExecuteScalar();
+            cn.Close();
+
+            if (count > 0)
+            {
+                // Admin login successful
+                MessageBox.Show("Admin login successful");
+
+                // Proceed with the admin-related actions or navigation
+                // For example:
+                adminaddbank adminaddbank = new adminaddbank();
+                adminaddbank.Show();
+                this.Hide();
+            }
+            else
+            {
+                // Admin login failed
+                MessageBox.Show("Admin login failed");
+            }
         }
     }
 }

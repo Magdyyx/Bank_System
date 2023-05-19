@@ -107,4 +107,4 @@ D:\Learning\Semester 4\DataBase git\Bank_System\BankSystem\obj\Debug\BankSystem.
 D:\Learning\Semester 4\DataBase git\Bank_System\BankSystem\obj\Debug\BankSystem.csproj.CoreCompileInputs.cache
 D:\Learning\Semester 4\DataBase git\Bank_System\BankSystem\obj\Debug\BankSystem.exe
 D:\Learning\Semester 4\DataBase git\Bank_System\BankSystem\obj\Debug\BankSystem.pdb
-D:\Test\bannoka\BankSystem\obj\Debug\BankSystem.employeeloggedin.resources
+D:\Test\bannoka\BankSystem\obj\Debug\BankSystem.customerloggedin.resources

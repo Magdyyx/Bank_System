@@ -64,11 +64,11 @@
     <Compile Include="adminlogin.Designer.cs">
       <DependentUpon>adminlogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="employeeloggedin.cs">
+    <Compile Include="customerloggedin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="employeeloggedin.Designer.cs">
-      <DependentUpon>employeeloggedin.cs</DependentUpon>
+    <Compile Include="customerloggedin.Designer.cs">
+      <DependentUpon>customerloggedin.cs</DependentUpon>
     </Compile>
     <Compile Include="customerlogin.cs">
       <SubType>Form</SubType>
@@ -129,8 +129,8 @@
     <EmbeddedResource Include="adminlogin.resx">
       <DependentUpon>adminlogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="employeeloggedin.resx">
-      <DependentUpon>employeeloggedin.cs</DependentUpon>
+    <EmbeddedResource Include="customerloggedin.resx">
+      <DependentUpon>customerloggedin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="customerlogin.resx">
       <DependentUpon>customerlogin.cs</DependentUpon>
