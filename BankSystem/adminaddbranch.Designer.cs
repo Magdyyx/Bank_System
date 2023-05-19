@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.branch_address_input = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.b_code_input = new System.Windows.Forms.TextBox();
+            this.branch_num_input = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // textBox3
+            // branch_address_input
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(630, 579);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(318, 30);
-            this.textBox3.TabIndex = 31;
+            this.branch_address_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.branch_address_input.Location = new System.Drawing.Point(630, 579);
+            this.branch_address_input.Name = "branch_address_input";
+            this.branch_address_input.Size = new System.Drawing.Size(318, 30);
+            this.branch_address_input.TabIndex = 31;
             // 
             // label4
             // 
@@ -69,6 +69,7 @@
             this.button4.TabIndex = 29;
             this.button4.Text = "Add";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -102,21 +103,21 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // textBox2
+            // b_code_input
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(630, 441);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(318, 30);
-            this.textBox2.TabIndex = 25;
+            this.b_code_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_code_input.Location = new System.Drawing.Point(630, 441);
+            this.b_code_input.Name = "b_code_input";
+            this.b_code_input.Size = new System.Drawing.Size(318, 30);
+            this.b_code_input.TabIndex = 25;
             // 
-            // textBox1
+            // branch_num_input
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(630, 297);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(318, 30);
-            this.textBox1.TabIndex = 24;
+            this.branch_num_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.branch_num_input.Location = new System.Drawing.Point(630, 297);
+            this.branch_num_input.Name = "branch_num_input";
+            this.branch_num_input.Size = new System.Drawing.Size(318, 30);
+            this.branch_num_input.TabIndex = 24;
             // 
             // label3
             // 
@@ -135,15 +136,15 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(318, 76);
             this.label2.TabIndex = 22;
-            this.label2.Text = "Branch Name";
+            this.label2.Text = "Branch Number";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(633, 26);
+            this.label1.Location = new System.Drawing.Point(605, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(315, 76);
+            this.label1.Size = new System.Drawing.Size(363, 76);
             this.label1.TabIndex = 21;
             this.label1.Text = "Add a new Branch";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -161,15 +162,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1262, 853);
-            this.Controls.Add(this.textBox3);
+            this.ClientSize = new System.Drawing.Size(1265, 862);
+            this.Controls.Add(this.branch_address_input);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.b_code_input);
+            this.Controls.Add(this.branch_num_input);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -183,14 +184,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox branch_address_input;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox b_code_input;
+        private System.Windows.Forms.TextBox branch_num_input;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

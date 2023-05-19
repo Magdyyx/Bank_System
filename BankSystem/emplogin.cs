@@ -33,9 +33,14 @@ namespace BankSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
-            employeeloggedin employeeloggedin = new employeeloggedin();
+            emploggedin employeeloggedin = new emploggedin();
             employeeloggedin.Show();
             this.Hide();
+        }
+
+        private void emplogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

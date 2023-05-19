@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -30,5 +31,46 @@ namespace BankSystem
             adminlogin.Show();
             this.Hide();
         }
+
+        private bool IsFound(string attribute, string table, string value, SqlConnection con)
+        {
+            string sqlSelect = "SELECT " + attribute + " FROM " + table;
+            SqlDataAdapter da = new SqlDataAdapter(sqlSelect, con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            string bCodeInput = value;
+
+            // Check if the value exists in the DataTable
+            DataRow[] foundRows = dt.Select(attribute + " = '" + bCodeInput + "'");
+            return foundRows.Length > 0;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //Changed the connection string declaration to a regular string variable.
+            string connectionString = "Data Source=BODA;Initial Catalog=Bank_System;Integrated Security=True";
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+                bool found = IsFound("BankCode", "Bank", b_code_input.Text, sqlConnection);
+
+                if (found)
+                {
+                    string sqlInsert = "INSERT INTO Branch(BranchNumber, BankCode, Address) VALUES (@bNumber, @code, @address)";
+                    SqlCommand cmd = new SqlCommand(sqlInsert, sqlConnection);
+                    cmd.Parameters.AddWithValue("@bNumber", branch_num_input.Text);
+                    cmd.Parameters.AddWithValue("@code", b_code_input.Text);
+                    cmd.Parameters.AddWithValue("@address", branch_address_input.Text);
+                    sqlConnection.Open();
+                    cmd.ExecuteNonQuery();
+                    sqlConnection.Close();
+                    MessageBox.Show("The Branch has been added successfully");
+                }
+                else
+                {
+                    MessageBox.Show("The Bank was not found");
+                }
+            }
+        }
+
     }
 }

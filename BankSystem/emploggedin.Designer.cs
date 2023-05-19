@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.userSSN_input = new System.Windows.Forms.TextBox();
+            this.userPhone_input = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.userAddr_input = new System.Windows.Forms.TextBox();
+            this.userName_input = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,28 +44,34 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.branchNo_input = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.BankNo_input = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox3
+            // userSSN_input
             // 
-            this.textBox3.Location = new System.Drawing.Point(603, 589);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(295, 22);
-            this.textBox3.TabIndex = 32;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.userSSN_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userSSN_input.Location = new System.Drawing.Point(563, 560);
+            this.userSSN_input.Name = "userSSN_input";
+            this.userSSN_input.Size = new System.Drawing.Size(369, 28);
+            this.userSSN_input.TabIndex = 32;
+            this.userSSN_input.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // textBox4
+            // userPhone_input
             // 
-            this.textBox4.Location = new System.Drawing.Point(603, 470);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(295, 22);
-            this.textBox4.TabIndex = 31;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.userPhone_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userPhone_input.Location = new System.Drawing.Point(563, 441);
+            this.userPhone_input.Name = "userPhone_input";
+            this.userPhone_input.Size = new System.Drawing.Size(369, 28);
+            this.userPhone_input.TabIndex = 31;
+            this.userPhone_input.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(689, 397);
+            this.label4.Location = new System.Drawing.Point(689, 367);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(147, 70);
             this.label4.TabIndex = 30;
@@ -76,7 +82,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(684, 273);
+            this.label5.Location = new System.Drawing.Point(684, 243);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(152, 70);
             this.label5.TabIndex = 29;
@@ -106,26 +112,28 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox2
+            // userAddr_input
             // 
-            this.textBox2.Location = new System.Drawing.Point(603, 340);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(295, 22);
-            this.textBox2.TabIndex = 26;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.userAddr_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userAddr_input.Location = new System.Drawing.Point(563, 311);
+            this.userAddr_input.Name = "userAddr_input";
+            this.userAddr_input.Size = new System.Drawing.Size(369, 28);
+            this.userAddr_input.TabIndex = 26;
+            this.userAddr_input.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox1
+            // userName_input
             // 
-            this.textBox1.Location = new System.Drawing.Point(603, 226);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(295, 22);
-            this.textBox1.TabIndex = 25;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.userName_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userName_input.Location = new System.Drawing.Point(563, 197);
+            this.userName_input.Name = "userName_input";
+            this.userName_input.Size = new System.Drawing.Size(369, 28);
+            this.userName_input.TabIndex = 25;
+            this.userName_input.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(689, 516);
+            this.label3.Location = new System.Drawing.Point(689, 486);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(147, 70);
             this.label3.TabIndex = 24;
@@ -136,7 +144,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(644, 169);
+            this.label2.Location = new System.Drawing.Point(644, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(219, 49);
             this.label2.TabIndex = 23;
@@ -147,9 +155,9 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(527, 25);
+            this.label1.Location = new System.Drawing.Point(534, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(429, 90);
+            this.label1.Size = new System.Drawing.Size(432, 90);
             this.label1.TabIndex = 22;
             this.label1.Text = "Add a new customer";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -209,23 +217,63 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
+            // branchNo_input
+            // 
+            this.branchNo_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.branchNo_input.Location = new System.Drawing.Point(753, 698);
+            this.branchNo_input.Name = "branchNo_input";
+            this.branchNo_input.Size = new System.Drawing.Size(179, 28);
+            this.branchNo_input.TabIndex = 39;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(796, 625);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(101, 70);
+            this.label6.TabIndex = 38;
+            this.label6.Text = "Branch Number";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BankNo_input
+            // 
+            this.BankNo_input.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BankNo_input.Location = new System.Drawing.Point(563, 698);
+            this.BankNo_input.Name = "BankNo_input";
+            this.BankNo_input.Size = new System.Drawing.Size(179, 28);
+            this.BankNo_input.TabIndex = 41;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(605, 625);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(105, 70);
+            this.label7.TabIndex = 40;
+            this.label7.Text = "Bank Number";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // emploggedin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 853);
+            this.Controls.Add(this.BankNo_input);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.branchNo_input);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.userSSN_input);
+            this.Controls.Add(this.userPhone_input);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.userAddr_input);
+            this.Controls.Add(this.userName_input);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -240,14 +288,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox userSSN_input;
+        private System.Windows.Forms.TextBox userPhone_input;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox userAddr_input;
+        private System.Windows.Forms.TextBox userName_input;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -256,5 +304,9 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.TextBox branchNo_input;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox BankNo_input;
+        private System.Windows.Forms.Label label7;
     }
 }
