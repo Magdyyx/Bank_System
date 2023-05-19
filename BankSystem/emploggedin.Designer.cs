@@ -44,6 +44,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox3
@@ -209,11 +211,30 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(664, 629);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(199, 70);
+            this.label6.TabIndex = 38;
+            this.label6.Text = "Branch Number";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(603, 702);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(295, 22);
+            this.textBox5.TabIndex = 39;
+            // 
             // emploggedin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 853);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
@@ -256,5 +277,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox5;
     }
 }

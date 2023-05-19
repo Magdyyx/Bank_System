@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -57,7 +58,18 @@ namespace BankSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
+            SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-5G3H0IA;Initial Catalog=Bank_System;Integrated Security=True");
+            cn.Open();
+            SqlCommand MyCommand = new SqlCommand("INSERT INTO Customer (SSN, Name, Phone,Address,BranchNumber) VALUES (@SSN, @Name, @Phone,@Address,@BranchNumber)", cn);
+            MyCommand.Parameters.AddWithValue("@SSN", textBox4.Text);
+            MyCommand.Parameters.AddWithValue("@Name", textBox1.Text.ToString());
+            MyCommand.Parameters.AddWithValue("@Phone", textBox3.Text.ToString());
+            MyCommand.Parameters.AddWithValue("@Address", textBox2.Text.ToString());
+            MyCommand.Parameters.AddWithValue("@BranchNumber", textBox5.Text.ToString());
 
+            MyCommand.ExecuteNonQuery();
+            cn.Close();
+            MessageBox.Show("Customer Added Successfully");
         }
 
         private void button2_Click(object sender, EventArgs e)
