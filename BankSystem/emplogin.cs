@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,6 +28,13 @@ namespace BankSystem
         {
             customerlogin customerlogin = new customerlogin();
             customerlogin.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            employeeloggedin employeeloggedin = new employeeloggedin();
+            employeeloggedin.Show();
             this.Hide();
         }
     }
