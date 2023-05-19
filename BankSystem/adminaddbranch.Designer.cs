@@ -69,6 +69,7 @@
             this.button4.TabIndex = 29;
             this.button4.Text = "Add";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -135,7 +136,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(318, 76);
             this.label2.TabIndex = 22;
-            this.label2.Text = "Branch Name";
+            this.label2.Text = "Branch Number";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
