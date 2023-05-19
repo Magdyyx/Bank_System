@@ -1,4 +1,0 @@
-D:\Test\Bank_System\Bank_System\x64\Debug\Bank_System.vcxproj.AssemblyReference.cache
-D:\Test\Bank_System\Bank_System\x64\Debug\Bank_System.vcxproj.SuggestedBindingRedirects.cache
-D:\Test\Bank_System\Bank_System\x64\Debug\BankSystem.SignUp.resources
-D:\Test\Bank_System\Bank_System\x64\Debug\Bank_System.vcxproj.GenerateResource.cache
