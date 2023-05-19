@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BankSystem
 {
-    public partial class customerloggedin : Form
+    public partial class employeeloggedin : Form
     {
-        public customerloggedin()
+        public employeeloggedin()
         {
             InitializeComponent();
         }
@@ -27,6 +27,11 @@ namespace BankSystem
             customerlogin customerlogin = new customerlogin();
             customerlogin.Show();
             this.Hide();
+        }
+
+        private void employeeloggedin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

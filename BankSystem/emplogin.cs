@@ -30,5 +30,12 @@ namespace BankSystem
             customerlogin.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            employeeloggedin employeeloggedin = new employeeloggedin();
+            employeeloggedin.Show();
+            this.Hide();
+        }
     }
 }

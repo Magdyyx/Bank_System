@@ -33,25 +33,7 @@ namespace BankSystem
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void customerlogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button4_Click(object sender, EventArgs e)
-        {
-            customerloggedin customerloggedin = new customerloggedin();
-            customerloggedin.Show();
-            this.Hide();
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

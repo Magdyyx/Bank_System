@@ -1,6 +1,6 @@
 ﻿namespace BankSystem
 {
-    partial class customerloggedin
+    partial class employeeloggedin
     {
         /// <summary>
         /// Required designer variable.
@@ -137,7 +137,7 @@
             this.label1.Text = "Take loan";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // customerloggedin
+            // employeeloggedin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -152,8 +152,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listView1);
-            this.Name = "customerloggedin";
-            this.Text = "customerloggedin";
+            this.Name = "employeeloggedin";
+            this.Text = "employeeloggedin";
+            this.Load += new System.EventHandler(this.employeeloggedin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
