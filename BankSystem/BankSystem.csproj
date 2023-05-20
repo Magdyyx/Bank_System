@@ -64,6 +64,12 @@
     <Compile Include="adminlogin.Designer.cs">
       <DependentUpon>adminlogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="adminupdatebranch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminupdatebranch.Designer.cs">
+      <DependentUpon>adminupdatebranch.cs</DependentUpon>
+    </Compile>
     <Compile Include="customerloggedin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,12 @@
     <Compile Include="empsignup.Designer.cs">
       <DependentUpon>empsignup.cs</DependentUpon>
     </Compile>
+    <Compile Include="empupdatecustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empupdatecustomer.Designer.cs">
+      <DependentUpon>empupdatecustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="adminlogin.resx">
       <DependentUpon>adminlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminupdatebranch.resx">
+      <DependentUpon>adminupdatebranch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="customerloggedin.resx">
       <DependentUpon>customerloggedin.cs</DependentUpon>
@@ -152,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="empsignup.resx">
       <DependentUpon>empsignup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empupdatecustomer.resx">
+      <DependentUpon>empupdatecustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>

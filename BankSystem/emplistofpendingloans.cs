@@ -59,5 +59,16 @@ namespace BankSystem
             this.Hide();
         }
 
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            empupdatecustomer updcustumer = new empupdatecustomer();
+            updcustumer.Show();
+            this.Hide();
+        }
     }
 }
