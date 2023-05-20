@@ -93,6 +93,7 @@
             this.button1.TabIndex = 16;
             this.button1.Text = "Log in as admin";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // textBox2
             // 
@@ -167,6 +168,7 @@
             this.Controls.Add(this.listView1);
             this.Name = "adminlogin";
             this.Text = "Admin login";
+            this.Load += new System.EventHandler(this.adminlogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -72,7 +72,7 @@ namespace BankSystem
         private void button4_Click(object sender, EventArgs e)
         {
             //Changed the connection string declaration to a regular string variable.
-            string connectionString = "Data Source=BODA;Initial Catalog=Bank_System;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-5G3H0IA;Initial Catalog=Bank_System;Integrated Security=True";
             using (SqlConnection sqlConnection = new SqlConnection(connectionString)) 
             {
                 bool found = isFound("BranchNumber", "Branch", branchNo_input.Text, sqlConnection);
@@ -146,6 +146,20 @@ namespace BankSystem
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            empdeletecustomer empdeletecustomer = new empdeletecustomer();
+            empdeletecustomer.Show();
+            this.Hide();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            empupdatecustomer empupdatecustomer = new empupdatecustomer();
+            empupdatecustomer.Show();
+            this.Hide();
         }
     }
 }

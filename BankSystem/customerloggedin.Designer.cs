@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.branchNo_input = new System.Windows.Forms.TextBox();
             this.amount_input = new System.Windows.Forms.TextBox();
@@ -39,16 +38,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(21, 478);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(271, 96);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Start Operation";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -146,7 +135,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.branchNo_input);
             this.Controls.Add(this.amount_input);
@@ -162,7 +150,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox branchNo_input;
         private System.Windows.Forms.TextBox amount_input;

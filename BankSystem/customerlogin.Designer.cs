@@ -167,6 +167,7 @@
             this.Controls.Add(this.listView1);
             this.Name = "customerlogin";
             this.Text = "customerlogin";
+            this.Load += new System.EventHandler(this.customerlogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
