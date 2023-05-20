@@ -40,7 +40,7 @@ namespace BankSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlConnection = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=Bank_System;Integrated Security=True");
+            SqlConnection sqlConnection = new SqlConnection("Data Source=DESKTOP-5G3H0IA;Initial Catalog=Bank_System;Integrated Security=True");
             string sql = "insert into Bank(BankName,BankCode,Address) values (@name,@code,@address)";
             SqlCommand cmd = new SqlCommand(sql,sqlConnection);
             cmd.Parameters.AddWithValue("@name", b_name_input.Text);
@@ -73,10 +73,17 @@ namespace BankSystem
 
         }
 
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            admindeletebranch admindeletebank = new admindeletebranch();
+            admindeletebank.Show();
+            this.Hide();
+        }
+
         private void button5_Click(object sender, EventArgs e)
         {
-            adminupdatebranch ad = new adminupdatebranch();
-            ad.Show();
+            adminupdatebranch adminupdatebranch = new adminupdatebranch();
+            adminupdatebranch.Show();
             this.Hide();
         }
     }

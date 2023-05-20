@@ -41,7 +41,7 @@ namespace BankSystem
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            SqlConnection cn = new SqlConnection(@"Data Source=localhost\sqlexpress;Initial Catalog=Bank_System;Integrated Security=True");
+            SqlConnection cn = new SqlConnection(@"Data Source=DESKTOP-5G3H0IA;Initial Catalog=Bank_System;Integrated Security=True");
             cn.Open();
             SqlCommand MyCommand = new SqlCommand("SELECT COUNT(*) FROM Admin WHERE Admin_Name = @AdminName AND Admin_ID = @AdminID", cn);
             textBox2.PasswordChar = '*';
@@ -66,6 +66,16 @@ namespace BankSystem
                 // Admin login failed
                 MessageBox.Show("Admin login failed");
             }
+        }
+
+        private void adminlogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

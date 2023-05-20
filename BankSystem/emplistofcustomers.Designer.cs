@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(emplistofcustomers));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.listView1 = new System.Windows.Forms.ListView();
             this.button2 = new System.Windows.Forms.Button();
@@ -49,12 +48,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(380, 74);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(338, 59);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(964, 849);
+            this.dataGridView1.Size = new System.Drawing.Size(857, 679);
             this.dataGridView1.TabIndex = 51;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -62,9 +60,8 @@
             // 
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(344, 1074);
+            this.listView1.Size = new System.Drawing.Size(306, 860);
             this.listView1.TabIndex = 52;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
@@ -72,10 +69,9 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(17, 60);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Location = new System.Drawing.Point(15, 48);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(305, 120);
+            this.button2.Size = new System.Drawing.Size(271, 96);
             this.button2.TabIndex = 45;
             this.button2.Text = "Add customer";
             this.button2.UseVisualStyleBackColor = true;
@@ -84,10 +80,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(17, 202);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Location = new System.Drawing.Point(15, 162);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(305, 120);
+            this.button1.Size = new System.Drawing.Size(271, 96);
             this.button1.TabIndex = 46;
             this.button1.Text = "Show list of loans";
             this.button1.UseVisualStyleBackColor = true;
@@ -96,10 +91,9 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(17, 340);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button3.Location = new System.Drawing.Point(15, 272);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(305, 120);
+            this.button3.Size = new System.Drawing.Size(271, 96);
             this.button3.TabIndex = 47;
             this.button3.Text = "Show list of customers";
             this.button3.UseVisualStyleBackColor = true;
@@ -115,10 +109,9 @@
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(17, 992);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button6.Location = new System.Drawing.Point(15, 794);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(305, 59);
+            this.button6.Size = new System.Drawing.Size(271, 47);
             this.button6.TabIndex = 49;
             this.button6.Text = "Log out";
             this.button6.UseVisualStyleBackColor = true;
@@ -127,9 +120,9 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(394, -21);
+            this.label1.Location = new System.Drawing.Point(350, -17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(964, 118);
+            this.label1.Size = new System.Drawing.Size(857, 94);
             this.label1.TabIndex = 50;
             this.label1.Text = "Showing list of customers";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -152,10 +145,9 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(12, 484);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button5.Location = new System.Drawing.Point(11, 387);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(305, 120);
+            this.button5.Size = new System.Drawing.Size(271, 96);
             this.button5.TabIndex = 48;
             this.button5.Text = "Pending loans";
             this.button5.UseVisualStyleBackColor = true;
@@ -164,21 +156,20 @@
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(12, 765);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button8.Location = new System.Drawing.Point(11, 612);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(305, 120);
+            this.button8.Size = new System.Drawing.Size(271, 96);
             this.button8.TabIndex = 61;
             this.button8.Text = "Delete Customer";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(12, 622);
-            this.button7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button7.Location = new System.Drawing.Point(11, 498);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(305, 120);
+            this.button7.Size = new System.Drawing.Size(271, 96);
             this.button7.TabIndex = 60;
             this.button7.Text = "Update Customer";
             this.button7.UseVisualStyleBackColor = true;
@@ -187,10 +178,9 @@
             // button9
             // 
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(1175, 944);
-            this.button9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button9.Location = new System.Drawing.Point(1044, 755);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(169, 71);
+            this.button9.Size = new System.Drawing.Size(150, 57);
             this.button9.TabIndex = 63;
             this.button9.Text = "Show";
             this.button9.UseVisualStyleBackColor = true;
@@ -198,9 +188,9 @@
             // 
             // emplistofcustomers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1420, 1066);
+            this.ClientSize = new System.Drawing.Size(1262, 844);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -212,8 +202,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.listView1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "emplistofcustomers";
             this.Text = "emplistofcustomers";
             this.Load += new System.EventHandler(this.emplistofcustomers_Load);

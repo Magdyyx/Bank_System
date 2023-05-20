@@ -72,7 +72,7 @@ namespace BankSystem
         private void button4_Click(object sender, EventArgs e)
         {
             //Changed the connection string declaration to a regular string variable.
-            string connectionString = "Data Source=localhost\\sqlexpress;Initial Catalog=Bank_System;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-5G3H0IA;Initial Catalog=Bank_System;Integrated Security=True";
             using (SqlConnection sqlConnection = new SqlConnection(connectionString)) 
             {
                 bool found = isFound("BranchNumber", "Branch", branchNo_input.Text, sqlConnection);
@@ -150,25 +150,12 @@ namespace BankSystem
 
         private void button8_Click(object sender, EventArgs e)
         {
-
+            empdeletecustomer empdeletecustomer = new empdeletecustomer();
+            empdeletecustomer.Show();
+            this.Hide();
         }
 
         private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void branchNo_input_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button7_Click_1(object sender, EventArgs e)
         {
             empupdatecustomer empupdatecustomer = new empupdatecustomer();
             empupdatecustomer.Show();

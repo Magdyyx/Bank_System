@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -45,17 +46,29 @@ namespace BankSystem
             this.Hide();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button8_Click(object sender, EventArgs e)
+        {
+            string connectionString = "Data Source=DESKTOP-5G3H0IA;Initial Catalog=Bank_System;Integrated Security=True";
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+                string sqlSelect = "SELECT * FROM Loan";
+                SqlCommand cmd = new SqlCommand(sqlSelect, sqlConnection);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable dataTable = new DataTable();
+                adapter.Fill(dataTable);
+
+                dataGridView1.DataSource = dataTable;
+            }
+
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button10_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
@@ -64,6 +77,13 @@ namespace BankSystem
         {
             empupdatecustomer empupdatecustomer = new empupdatecustomer();
             empupdatecustomer.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            empdeletecustomer empdeletecustomer = new empdeletecustomer();
+            empdeletecustomer.Show();
             this.Hide();
         }
     }
